@@ -1,1 +1,92 @@
-grab
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Download video dari YouTube, TikTok, Instagram, dan Facebook.">
+  <title>VideoGrab — Video Downloader</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="topbar">
+  <a class="brand" href="./">Video<span>Grab</span></a>
+  <span class="platform-note">YouTube · TikTok · Instagram · Facebook</span>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="badge">SOCIAL VIDEO DOWNLOADER</div>
+    <h1>Download video dengan mudah.</h1>
+    <p class="subtitle">Tempel link YouTube, TikTok, Instagram, atau Facebook.</p>
+
+    <div class="card">
+      <div class="platforms" role="tablist" aria-label="Pilih platform">
+        <button class="platform active" data-platform="auto">Semua</button>
+        <button class="platform" data-platform="youtube">YouTube</button>
+        <button class="platform" data-platform="tiktok">TikTok</button>
+        <button class="platform" data-platform="instagram">Instagram</button>
+        <button class="platform" data-platform="facebook">Facebook</button>
+      </div>
+
+      <form id="downloadForm">
+        <label for="videoUrl">URL video</label>
+        <div class="input-wrap">
+          <input id="videoUrl" type="url" autocomplete="off"
+                 placeholder="https://www.youtube.com/watch?v=..." required>
+          <button type="button" id="pasteBtn" class="paste">Tempel</button>
+        </div>
+        <p id="error" class="error" hidden></p>
+
+        <button class="main-btn" type="submit">
+          Lanjutkan Download
+        </button>
+      </form>
+
+      <!-- ================================
+           AREA IKLAN #1
+           Tempel kode AdSense/ad network di sini.
+           Jangan mengubah ID container ini.
+           ================================= -->
+      <div class="ad-box" id="adBox">
+        <span>ADVERTISEMENT</span>
+        <strong>Ruang iklan</strong>
+        <small>Iklan akan tampil di area ini sebelum proses download.</small>
+      </div>
+
+      <div id="result" class="result" hidden>
+        <div class="check">✓</div>
+        <div>
+          <strong>Link diterima</strong>
+          <p id="resultText"></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="how">
+    <h2>Cara menggunakan</h2>
+    <div class="steps">
+      <article><span>01</span><h3>Salin link</h3><p>Salin URL video dari platform yang didukung.</p></article>
+      <article><span>02</span><h3>Tempel</h3><p>Masukkan link ke kotak downloader di atas.</p></article>
+      <article><span>03</span><h3>Download</h3><p>Setelah backend aktif, pilihan kualitas akan muncul.</p></article>
+    </div>
+  </section>
+
+  <section class="supported">
+    <h2>Platform yang didukung</h2>
+    <div class="chips">
+      <span>▶ YouTube</span><span>♪ TikTok</span><span>◎ Instagram</span><span>f Facebook</span>
+    </div>
+  </section>
+
+  <p class="legal">
+    Gunakan layanan ini hanya untuk konten yang kamu miliki atau yang memang kamu
+    berhak unduh. Hormati hak cipta dan ketentuan platform.
+  </p>
+</main>
+
+<footer>© 2026 VideoGrab</footer>
+<script src="script.js"></script>
+</body>
+          </html>
+    
