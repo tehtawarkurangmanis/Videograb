@@ -1,0 +1,8 @@
+services:
+  - type: web
+    name: videograb
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
